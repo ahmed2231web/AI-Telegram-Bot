@@ -2,8 +2,6 @@
 
 # 🌟 GeminiVision Bot
 
-<img src="https://i.imgur.com/YPxwGRC.png" alt="GeminiVision Bot Logo" width="200"/>
-
 ### Your AI-Powered Telegram Assistant with Vision & Crypto Insights
 
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white&labelColor=black)](https://www.python.org/downloads/)
@@ -227,11 +225,6 @@ Bot: 📈 Generating Ethereum weekly chart...
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 <div align="center">

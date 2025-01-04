@@ -231,7 +231,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Made with ❤️ using Google Gemini AI and Alpha Vantage
 
-[![Stars](https://img.shields.io/github/stars/yourusername/geminivision-bot?style=social)](https://github.com/yourusername/geminivision-bot/stargazers)
-[![Follow](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
-
 </div>

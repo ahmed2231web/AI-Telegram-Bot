@@ -1,163 +1,244 @@
-# 🤖 GeminiVision Bot
-
 <div align="center">
 
-![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)
-![Telegram](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram)
-![Google Gemini](https://img.shields.io/badge/Google-Gemini-red?style=for-the-badge&logo=google)
+# 🌟 GeminiVision Bot
 
-A powerful Telegram bot powered by Google's Gemini AI that can understand both text and images! 🚀
+<img src="https://i.imgur.com/YPxwGRC.png" alt="GeminiVision Bot Logo" width="200"/>
 
-[Features](#✨-features) • [Installation](#🛠️-installation) • [Usage](#📱-usage) • [Configuration](#⚙️-configuration) • [Examples](#📸-examples)
+### Your AI-Powered Telegram Assistant with Vision & Crypto Insights
+
+[![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white&labelColor=black)](https://www.python.org/downloads/)
+[![Telegram](https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram&logoColor=white&labelColor=black)](https://t.me/your_bot)
+[![Google Gemini](https://img.shields.io/badge/Powered%20by-Gemini%20AI-red?style=for-the-badge&logo=google&logoColor=white&labelColor=black)](https://deepmind.google/technologies/gemini/)
+[![Alpha Vantage](https://img.shields.io/badge/Crypto%20Data-Alpha%20Vantage-green?style=for-the-badge&logo=bitcoin&logoColor=white&labelColor=black)](https://www.alphavantage.co/)
+
+---
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-configuration">Configuration</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-examples">Examples</a>
+</p>
 
 </div>
 
----
+## 🎯 Overview
+
+Welcome to GeminiVision Bot – a cutting-edge Telegram bot that combines the power of Google's Gemini AI with real-time cryptocurrency insights. Experience seamless interaction with advanced AI while staying updated with the crypto market! 
+
+### 🌈 Key Highlights
+
+- 🤖 **AI Vision Analysis**: Understand images with Google's latest Gemini Vision AI
+- 💰 **Crypto Tracking**: Real-time prices and professional charts
+- 🎨 **Beautiful UI**: Clean, emoji-rich responses
+- ⚡ **Lightning Fast**: Optimized for quick responses
+- 🛡️ **Secure**: Best practices for API key management
 
 ## ✨ Features
 
-- 🤖 **Advanced AI Conversations**: Engage in natural conversations with Google's latest Gemini AI
-- 🖼️ **Image Analysis**: Send images and get detailed analysis and insights
-- 🎯 **Multi-Purpose**: Can answer questions, analyze images, explain concepts, and more
-- ⚡ **Fast Responses**: Uses Gemini's flash model for quick text responses
-- 🔍 **Detailed Vision Analysis**: Powered by Gemini Pro Vision for image understanding
-- 🎨 **Beautiful Formatting**: Clean and organized responses with relevant emojis
-- 📈 **Cryptocurrency Features**: Get real-time prices, historical data, and candlestick charts for major cryptocurrencies
+<details>
+<summary>🤖 AI Capabilities</summary>
 
-## 🛠️ Installation
+- Natural language understanding
+- Image analysis and description
+- Context-aware conversations
+- Multi-turn dialogue support
+- Rich text formatting
+</details>
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/geminivision-bot.git
-   cd geminivision-bot
-   ```
+<details>
+<summary>📈 Cryptocurrency Features</summary>
 
-2. **Set up virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+- Real-time price tracking
+- Professional candlestick charts
+- Multiple timeframe analysis
+- Volume indicators
+- Top 10 cryptocurrencies support
+</details>
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+<details>
+<summary>🛠️ Technical Features</summary>
 
-4. **Configure environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your actual API keys
-   ```
+- Asynchronous processing
+- Error handling & recovery
+- Rate limit management
+- Automatic retries
+- Extensive logging
+</details>
+
+## 🚀 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/geminivision-bot.git
+
+# Navigate to project
+cd geminivision-bot
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate  # Linux/Mac
+# or
+.\venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ## ⚙️ Configuration
 
-1. **Get your API Keys**:
-   - Telegram Bot Token: Message [@BotFather](https://t.me/botfather) on Telegram
-   - Gemini API Key: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Alpha Vantage API Key: Visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key)
+### 1. Get Your API Keys
 
-2. **Update your .env file**:
-   ```env
-   BOT_TOKEN=your_telegram_bot_token
-   GEMINI_API_KEY=your_gemini_api_key
-   ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
-   ```
+| API | Purpose | Get Key |
+|-----|----------|----------|
+| 🤖 Telegram | Bot Token | [@BotFather](https://t.me/botfather) |
+| 🧠 Gemini AI | Vision & Text AI | [Google AI Studio](https://makersuite.google.com/app/apikey) |
+| 📊 Alpha Vantage | Crypto Data | [Alpha Vantage](https://www.alphavantage.co/support/#api-key) |
+
+### 2. Set Up Environment
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` with your API keys:
+```env
+BOT_TOKEN=your_telegram_bot_token
+GEMINI_API_KEY=your_gemini_api_key
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
+```
 
 ## 📱 Usage
 
-### Text Queries
-Send text messages to the bot using the `/ai` command:
-```
+### 💬 AI Commands
+
+```bash
 /ai What is quantum computing?
+/ai Explain blockchain technology
+/ai Tell me about SpaceX
 ```
 
-### Image Analysis
-Two ways to analyze images:
+### 🖼️ Image Analysis
 
-1. **Send image with caption**:
-   - Send an image to the bot
-   - Add your question as the caption
+<table>
+<tr>
+<th>Method</th>
+<th>Steps</th>
+</tr>
+<tr>
+<td>With Caption</td>
+<td>
+1. Send image<br>
+2. Add question as caption
+</td>
+</tr>
+<tr>
+<td>Reply to Image</td>
+<td>
+1. Send image<br>
+2. Reply with /ai command
+</td>
+</tr>
+</table>
 
-2. **Reply to image**:
-   - Send an image
-   - Reply to it with `/ai` and your question
+### 💰 Cryptocurrency Commands
 
-### Cryptocurrency Commands
-Get cryptocurrency prices and charts:
+#### Price Checking
+```bash
+/price BTC    # Bitcoin price
+/price ETH    # Ethereum price
+```
 
-1. **Get Current Price**:
-   ```
-   /price BTC    # Get Bitcoin price
-   /price ETH    # Get Ethereum price
-   ```
+#### Chart Analysis
+```bash
+/chart BTC 1day    # Daily Bitcoin chart
+/chart ETH 1week   # Weekly Ethereum chart
+/chart BTC 1month  # Monthly Bitcoin chart
+```
 
-2. **View Price Charts**:
-   ```
-   /chart BTC 1day    # Daily Bitcoin chart
-   /chart ETH 1week   # Weekly Ethereum chart
-   /chart BTC 1month  # Monthly Bitcoin chart
-   ```
+### 🪙 Supported Cryptocurrencies
 
-Available cryptocurrencies: BTC, ETH, SOL, ADA, DOGE, XRP, LTC, BNB, MATIC, DOT
-Available timeframes: 1day, 1week, 1month
+| Symbol | Name | Symbol | Name |
+|--------|------|--------|------|
+| BTC | Bitcoin | ETH | Ethereum |
+| SOL | Solana | ADA | Cardano |
+| DOGE | Dogecoin | XRP | Ripple |
+| LTC | Litecoin | BNB | Binance Coin |
+| MATIC | Polygon | DOT | Polkadot |
 
-## 📈 Cryptocurrency Features
+### ⏰ Timeframes
 
-The bot uses the Alpha Vantage API to provide:
-
-- **Real-time Prices**: Get current prices for major cryptocurrencies
-- **Historical Data**: View price trends over different timeframes
-- **Candlestick Charts**: Professional-grade charts with volume indicators
-- **Multiple Timeframes**: Choose between daily, weekly, or monthly views
-- **Error Handling**: Robust error handling for API limits and invalid requests
+- `1day`: 24-hour analysis
+- `1week`: 7-day trends
+- `1month`: 30-day overview
 
 ## 📸 Examples
 
-### Text Analysis
-```
-You: /ai Explain blockchain technology
-Bot: 🔑 Key Features:
-    • Decentralized ledger
-    • Immutable records
-    • Cryptographic security
-    
-⚙️ How it Works:
-    • Transactions are verified
-    • Blocks are created
-    • Chain is maintained
-```
+<details>
+<summary>💬 AI Chat Example</summary>
 
-### Image Analysis
 ```
-You: *sends food image* "What ingredients do I need?"
-Bot: 📝 Recipe Components:
-    • Lists main ingredients
-    • Cooking instructions
-    • Time and servings
+You: /ai Explain blockchain
+Bot: 🔗 Blockchain Explained:
+
+🏗️ Structure:
+• Decentralized digital ledger
+• Chain of chronological blocks
+• Cryptographically secured
+
+🔑 Key Features:
+• Immutable records
+• Transparent transactions
+• No central authority
+
+💡 Use Cases:
+• Cryptocurrencies
+• Smart contracts
+• Supply chain tracking
 ```
+</details>
 
-## 🔒 Security
+<details>
+<summary>📊 Crypto Analysis Example</summary>
 
-- Never share your API keys
-- Store sensitive data in .env file
-- Keep your bot token private
-- Regularly update dependencies
+```
+You: /price BTC
+Bot: 💰 BTC/USD
+Current Price: $97,875.91
+Updated: 2025-01-04 22:47 UTC
+
+You: /chart ETH 1week
+Bot: 📈 Generating Ethereum weekly chart...
+*Sends professional candlestick chart*
+```
+</details>
+
+## 🛡️ Security
+
+- ✅ Environment variables for API keys
+- 🔒 Secure error handling
+- 🔐 Rate limiting protection
+- 📝 Extensive logging
+- 🚫 Input validation
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-<!-- ## 📄 License
+## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. -->
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by Ahmed
+### Made with ❤️ using Google Gemini AI and Alpha Vantage
+
+[![Stars](https://img.shields.io/github/stars/yourusername/geminivision-bot?style=social)](https://github.com/yourusername/geminivision-bot/stargazers)
+[![Follow](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
 
 </div>

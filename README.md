@@ -22,6 +22,7 @@ A powerful Telegram bot powered by Google's Gemini AI that can understand both t
 - ⚡ **Fast Responses**: Uses Gemini's flash model for quick text responses
 - 🔍 **Detailed Vision Analysis**: Powered by Gemini Pro Vision for image understanding
 - 🎨 **Beautiful Formatting**: Clean and organized responses with relevant emojis
+- 📈 **Cryptocurrency Features**: Get real-time prices, historical data, and candlestick charts for major cryptocurrencies
 
 ## 🛠️ Installation
 
@@ -53,11 +54,13 @@ A powerful Telegram bot powered by Google's Gemini AI that can understand both t
 1. **Get your API Keys**:
    - Telegram Bot Token: Message [@BotFather](https://t.me/botfather) on Telegram
    - Gemini API Key: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Alpha Vantage API Key: Visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key)
 
 2. **Update your .env file**:
    ```env
    BOT_TOKEN=your_telegram_bot_token
    GEMINI_API_KEY=your_gemini_api_key
+   ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
    ```
 
 ## 📱 Usage
@@ -78,6 +81,35 @@ Two ways to analyze images:
 2. **Reply to image**:
    - Send an image
    - Reply to it with `/ai` and your question
+
+### Cryptocurrency Commands
+Get cryptocurrency prices and charts:
+
+1. **Get Current Price**:
+   ```
+   /price BTC    # Get Bitcoin price
+   /price ETH    # Get Ethereum price
+   ```
+
+2. **View Price Charts**:
+   ```
+   /chart BTC 1day    # Daily Bitcoin chart
+   /chart ETH 1week   # Weekly Ethereum chart
+   /chart BTC 1month  # Monthly Bitcoin chart
+   ```
+
+Available cryptocurrencies: BTC, ETH, SOL, ADA, DOGE, XRP, LTC, BNB, MATIC, DOT
+Available timeframes: 1day, 1week, 1month
+
+## 📈 Cryptocurrency Features
+
+The bot uses the Alpha Vantage API to provide:
+
+- **Real-time Prices**: Get current prices for major cryptocurrencies
+- **Historical Data**: View price trends over different timeframes
+- **Candlestick Charts**: Professional-grade charts with volume indicators
+- **Multiple Timeframes**: Choose between daily, weekly, or monthly views
+- **Error Handling**: Robust error handling for API limits and invalid requests
 
 ## 📸 Examples
 
